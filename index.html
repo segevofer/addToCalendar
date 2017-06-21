@@ -1,0 +1,71 @@
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>Add To Calendar Link Generator</title>
+    <script type="text/javascript" src="libs/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/jquery.datetimepicker.full.min.js"></script>
+    <script type="text/javascript" src="libs/clipboard.min.js"></script>
+
+    <script type="text/javascript" src="index.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="libs/jquery.datetimepicker.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="input-container">
+        <input type="text" id="title" placeholder="Untitled event">
+    </div>
+    <div class="input-container">
+        <span class="from">
+            <input id="fromDate" type="text" class="date" placeholder="Date">
+            <input id="fromTime" type="text" class="time" placeholder="Time">
+        </span>
+        <span class="to">
+            to
+        </span>
+        <span class="to">
+            <input id="toDate" type="text" class="date" placeholder="Date">
+            <input id="toTime" type="text" class="time" placeholder="Time">
+        </span>
+    </div>
+
+
+    <br/>
+
+    <div class="input-container">
+        <label class="label">
+            Where
+        </label>
+        <input type="text" id="place" class="place" placeholder="Enter a location">
+    </div>
+
+    <div class="input-container">
+        <label class="label">
+            Description
+        </label>
+        <textarea id="details" class="details"></textarea>
+    </div>
+
+
+    <div class="input-container">
+        <button type="button" name="button" class="create-event-btn" id='createEventButton'>
+            Create
+        </button>
+
+        <small id="copiedToClipboard">
+            Copied to Clipboard
+        </small>
+    </div>
+
+    <div class="result-container">
+        <a id='result' target="_blank" href=""></a>
+    </div>
+
+</div>
+
+</body>
+</html>
