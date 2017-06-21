@@ -3,6 +3,7 @@
     <meta charset=utf-8>
     <title>Add To Calendar Link Generator</title>
     <script type="text/javascript" src="libs/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/lodash.min.js"></script>
     <script type="text/javascript" src="libs/jquery.datetimepicker.full.min.js"></script>
     <script type="text/javascript" src="libs/clipboard.min.js"></script>
 
@@ -10,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="libs/jquery.datetimepicker.css"/>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" id="favicon" type="image/x-icon" href="//calendar.google.com/googlecalendar/images/favicon_v2014_21.ico">
 </head>
 
 <body>
@@ -56,7 +58,7 @@
             Create
         </button>
 
-        <small id="copiedToClipboard">
+        <small id="copiedToClipboard" style="display: none;">
             Copied to Clipboard
         </small>
     </div>
